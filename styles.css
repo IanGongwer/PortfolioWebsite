@@ -77,6 +77,7 @@ li {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 12px;
+  animation: animate-slide-left 1s ease;
 }
 
 .text--blue {
@@ -106,12 +107,24 @@ nav {
 
 .nav__link--list {
   display: flex;
+  animation: animate-nav-bar 1000ms;
 }
 
 .nav__link--anchor {
   margin: 0 12px;
   color: #242424;
   font-weight: 700;
+}
+
+@keyframes animate-nav-bar {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 .nav__link--anchor-primary {
@@ -283,6 +296,17 @@ nav {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+}
+
+@keyframes animate-slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 .language__name {
