@@ -1,3 +1,5 @@
-# PortfolioWebsite
+# Portfolio Website
 
-My personal Portfolio Website for showcasing my projects and various links to find me elsewhere.
+Created a personal portfolio website to showcase my skills and projects
+
+Live Site Link: http://site.iangongwer.com
